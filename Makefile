@@ -1,14 +1,14 @@
 NAME=WebServ
-SRCS=./srcs
-LIBFT=./libft
 FLAGS=-Wall -Wextra -Werror -std=c++98
+SRCS=./srcs
+OBJS=$(*.c=.o)
 
-$(NAME): gcc $(FLAGS) $(LIBFT) $(SRCS)
+$(NAME): gcc $(FLAGS) $(SRCS) -o $(OBJS)
 
 all:
 	$(NAME)
 
-clean: rm -f $(OBJ)
+clean: rm -f $(OBJS)
 
 fclean: clean
 	rm -f $(NAME)
