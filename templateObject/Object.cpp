@@ -13,9 +13,8 @@ Object &Object::operator=(const Object &source)
 
 Object::Object(const Object &source)
 {
-	if (this != &source) {
+	if (this != &source)
 		*this = source;
-	}
 }
 
 Object::~Object(void)

@@ -13,9 +13,8 @@ VirtualServer &VirtualServer::operator=(const VirtualServer &source)
 
 VirtualServer::VirtualServer(const VirtualServer &source)
 {
-	if (this != &source) {
+	if (this != &source)
 		*this = source;
-	}
 }
 
 VirtualServer::~VirtualServer(void)

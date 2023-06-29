@@ -13,9 +13,8 @@ Server &Server::operator=(const Server &source)
 
 Server::Server(const Server &source)
 {
-	if (this != &source) {
+	if (this != &source)
 		*this = source;
-	}
 }
 
 Server::~Server(void)

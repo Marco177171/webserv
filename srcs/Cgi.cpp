@@ -13,9 +13,8 @@ Cgi &Cgi::operator=(const Cgi &source)
 
 Cgi::Cgi(const Cgi &source)
 {
-	if (this != &source) {
+	if (this != &source)
 		*this = source;
-	}
 }
 
 Cgi::~Cgi(void)

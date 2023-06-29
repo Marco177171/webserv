@@ -13,9 +13,8 @@ Parser &Parser::operator=(const Parser &source)
 
 Parser::Parser(const Parser &source)
 {
-	if (this != &source) {
+	if (this != &source)
 		*this = source;
-	}
 }
 
 Parser::~Parser(void)
