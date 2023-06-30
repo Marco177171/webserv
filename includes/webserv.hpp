@@ -23,6 +23,10 @@
 # include <fcntl.h>
 # include <time.h>
 
+typedef struct s_config {
+    // configuration features here...
+} t_config;
+
 void usage();
 
 #endif

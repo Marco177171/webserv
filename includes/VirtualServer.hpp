@@ -1,6 +1,8 @@
 #ifndef VIRTUALSERVER_HPP
 # define VIRTUALSERVER_HPP
 
+#include "webserv.hpp"
+
 class VirtualServer {
 	public:
 		VirtualServer(void);
