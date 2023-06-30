@@ -1,5 +1,5 @@
-#ifndef Server_HPP
-# define Server_HPP
+#ifndef SERVER_HPP
+# define SERVER_HPP
 
 class Server {
 	public:
