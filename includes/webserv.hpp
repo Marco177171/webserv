@@ -23,4 +23,6 @@
 # include <fcntl.h>
 # include <time.h>
 
+void usage();
+
 #endif

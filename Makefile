@@ -1,9 +1,9 @@
 NAME=WebServ
 FLAGS=-Wall -Wextra -Werror -std=c++98
 SRCS=./srcs
-OBJS=$(*.c=.o)
+OBJS=$(SRCS:*.cpp=.o)
 
-$(NAME): gcc $(FLAGS) $(SRCS) -o $(OBJS)
+$(NAME): c++ $(FLAGS) $(SRCS) -o $(OBJS)
 
 all:
 	$(NAME)

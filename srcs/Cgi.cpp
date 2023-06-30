@@ -1,4 +1,5 @@
-#include "Cgi.hpp"
+#include "../includes/webserv.hpp"
+#include "../includes/Cgi.hpp"
 
 // Construction and destruction...
 

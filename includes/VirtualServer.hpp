@@ -10,6 +10,8 @@ class VirtualServer {
 		// public methods here...
 	private:
 		// private methods here...
+		const char *filename;
+		std::vector<t_config> _config;
 };
 
 #endif

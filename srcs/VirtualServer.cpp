@@ -1,4 +1,5 @@
-#include "VirtualServer.hpp"
+#include "../includes/webserv.hpp"
+#include "../includes/VirtualServer.hpp"
 
 // Construction and destruction...
 

@@ -3,6 +3,7 @@
 
 class Server {
 	public:
+		Server(const char *filename);
 		Server(void);
 		Server(const Server &source);
 		Server &operator=(const Server &source);
