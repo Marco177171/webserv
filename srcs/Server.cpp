@@ -21,7 +21,7 @@ Server::Server(const Server &source)
 Server::~Server(void)
 {}
 
-Server::Server(const char *filename): _filename
+Server::Server(const char *filename): _filename(filename == NULL ? "default.conf" : filename)
 {
 	std::cout << "server started from configuration file" << std::endl;
 }
