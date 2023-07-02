@@ -1,5 +1,6 @@
 #include "../includes/webserv.hpp"
 #include "../includes/Server.hpp"
+#include <stack>
 
 // Construction and destruction...
 
@@ -23,5 +24,6 @@ Server::~Server(void)
 
 Server::Server(const char *filename): _filename(filename == NULL ? "default.conf" : filename)
 {
+	VirtualServer* Virtual;
 	std::cout << "server started from configuration file" << std::endl;
 }

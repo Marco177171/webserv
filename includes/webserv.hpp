@@ -23,9 +23,27 @@
 # include <fcntl.h>
 # include <time.h>
 
+# include "../includes/VirtualServer.hpp"
+
+typedef struct s_location {
+	// location features here...
+} t_location;
+
 typedef struct s_config {
-    // configuration features here...
+	// configuration features here...
 } t_config;
+
+typedef struct s_request {
+	// request features here...
+} t_request;
+
+typedef struct s_response {
+	// response features here...
+} t_response;
+
+typedef struct s_conn_info {
+	// conn_info features here...
+} t_conn_info;
 
 void usage();
 
