@@ -1,18 +1,29 @@
-NAME=WebServ
-FLAGS=-Wall -Wextra -Werror -std=c++98
-SRCS=./srcs
-OBJS=$(SRCS:*.cpp=.o)
+NAME	=	webserv
+CC		=	c++
+FLAGS	=	-Wall -Werror -Wextra -std=c++98 -I./includes -g
+SRC		=	main.cpp \
+			utils.cpp \
+			Server.cpp \
+			parser.cpp \
+			WebServer.cpp \
+			Cgi.cpp
+SRCS	=	$(addprefix srcs/, $(SRC))
+OBJS	=	$(SRCS:.cpp=.o)
 
-$(NAME): c++ $(FLAGS) $(SRCS) -o $(OBJS)
+all: $(NAME)
 
-all:
-	$(NAME)
+$(NAME): $(OBJS)
+	$(CC) $(FLAGS) $(OBJS) -o $(NAME)
 
-clean: rm -f $(OBJS)
+%.o: %.cpp
+	$(CC) -c $(FLAGS) $< -o $@
+
+clean:
+	rm -f $(OBJS)
 
 fclean: clean
 	rm -f $(NAME)
 
 re: fclean all
 
-.PHONY:
+.PHONY: all clean fclean re

@@ -1,0 +1,4 @@
+http://127.0.0.1:12356/index.html
+http://127.0.0.1:12356/register.html
+http://127.0.0.1:12356/registered.html
+http://127.0.0.1:12356/index2.html
